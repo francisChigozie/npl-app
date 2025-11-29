@@ -1,4 +1,4 @@
-// @ts-ignore
+// @ts-expect-error React is used for JSX
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './auth/AuthContext';
@@ -18,13 +18,9 @@ import DashSupervisor from './features/DashSupervisor';
 import Loans from './pages/Loans';
 import Privacy from './pages/PrivacyPage';
 import Terms from './pages/TermsPage';
-// @ts-ignore
 import Portfolio from './pages/Portfolio';
-// @ts-ignore
 import Services from './pages/Services';
-// @ts-ignore
 import About from './pages/About';
-// @ts-ignore
 import Contact from './pages/Contact';
 // New imports:
 import Blog from './pages/Blog';
