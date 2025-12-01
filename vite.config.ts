@@ -1,6 +1,5 @@
 // vite.config.ts
 import { defineConfig } from "vite";
-// @ts-ignore
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
@@ -18,7 +17,7 @@ export default defineConfig({
     resolve: {
         dedupe: ["react", "react-dom"],
     },
-
+    base: '/',  // Absolute paths
     build: {
         rollupOptions: {
             output: {
